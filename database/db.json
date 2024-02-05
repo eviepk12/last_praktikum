@@ -1,0 +1,180 @@
+{
+  "hotels": [
+    {
+      "id": "65bfac3a226a3733381e891c",
+      "name": "Lyrichord",
+      "email": "roylyons@lyrichord.com",
+      "phone": "+62 (917) 517-2064",
+      "address": "119 Arkansas Drive, Sussex, Rhode Island, 3912",
+      "about": "Id consectetur cupidatat anim dolore qui nisi. Mollit culpa proident et velit labore non est aliquip nostrud ex. Elit consequat est qui exercitation irure exercitation laboris Lorem. Quis excepteur in magna ea proident commodo velit exercitation occaecat tempor voluptate. Velit do minim esse laboris nostrud mollit voluptate reprehenderit non consequat nisi cupidatat laboris mollit.\r\n",
+      "balance": "$2,203.56",
+      "city": "Tangerang Selatan",
+      "rating": 9
+    },
+    {
+      "id": "65bfac3a19fc646ec5a78e19",
+      "name": "Cofine",
+      "email": "roylyons@cofine.com",
+      "phone": "+62 (961) 477-2496",
+      "address": "721 Hall Street, Cassel, Illinois, 4761",
+      "about": "Esse exercitation Lorem sunt proident ullamco adipisicing ad anim. Ipsum est fugiat et enim officia sint cupidatat pariatur sit voluptate occaecat id laborum. Velit aliqua est esse elit culpa culpa labore deserunt amet. Do commodo ipsum laboris irure officia ullamco commodo ullamco et ut aliqua. Voluptate qui tempor incididunt et. Irure officia aliquip ad laboris mollit ea cillum incididunt cillum. Quis irure est fugiat in velit tempor.\r\n",
+      "balance": "$1,119.55",
+      "city": "Jakarta",
+      "rating": 5
+    },
+    {
+      "id": "65bfac3a0df6a34cbc3ffcbb",
+      "name": "Gronk",
+      "email": "roylyons@gronk.com",
+      "phone": "+62 (853) 469-2865",
+      "address": "855 Sutton Street, Villarreal, Iowa, 9479",
+      "about": "Commodo nisi excepteur aliqua anim anim ut ea cillum. Irure Lorem exercitation laborum aliquip officia voluptate est. Irure officia irure do enim et esse. Proident amet amet adipisicing elit. Culpa amet sint cupidatat nostrud pariatur eiusmod. Velit nulla irure irure consequat culpa occaecat in occaecat officia.\r\n",
+      "balance": "$1,970.87",
+      "city": "Depok",
+      "rating": 2
+    },
+    {
+      "id": "65bfac3afa22065c728578e5",
+      "name": "Orbean",
+      "email": "roylyons@orbean.com",
+      "phone": "+62 (996) 419-3751",
+      "address": "800 Merit Court, Tibbie, Alaska, 9657",
+      "about": "Exercitation Lorem ipsum voluptate est occaecat esse Lorem adipisicing enim duis do incididunt dolor. Do ex adipisicing exercitation ut et veniam laboris dolor proident culpa eu. Ipsum exercitation quis sunt eiusmod veniam qui labore esse non ipsum laborum consequat cupidatat. Magna reprehenderit fugiat aliqua aute cillum est reprehenderit quis. Et ea do cillum do tempor sunt proident ad ipsum elit fugiat fugiat ipsum. Officia aliqua tempor ea ad ea anim eiusmod incididunt mollit eiusmod reprehenderit nostrud labore elit.\r\n",
+      "balance": "$2,839.46",
+      "city": "Bogor",
+      "rating": 1
+    },
+    {
+      "id": "65bfac3a9592aebe8c2a2c7e",
+      "name": "Velos",
+      "email": "roylyons@velos.com",
+      "phone": "+62 (989) 537-2527",
+      "address": "620 Channel Avenue, Bluetown, West Virginia, 7928",
+      "about": "Incididunt reprehenderit ut nisi amet. Excepteur consequat ut non quis Lorem exercitation consequat Lorem elit cillum est deserunt incididunt. Consectetur quis duis amet veniam fugiat ad occaecat quis sunt in sunt. Voluptate enim consectetur occaecat fugiat excepteur irure occaecat quis irure in incididunt laboris mollit eu. Aute minim irure magna veniam. Lorem aliqua commodo minim ut qui id nostrud dolore voluptate. Id esse consectetur proident ipsum id.\r\n",
+      "balance": "$3,492.51",
+      "city": "Jakarta",
+      "rating": 2
+    },
+    {
+      "id": "65bfac3a022a84d68e27e9f8",
+      "name": "Kindaloo",
+      "email": "roylyons@kindaloo.com",
+      "phone": "+62 (838) 445-3437",
+      "address": "780 Stuyvesant Avenue, Takilma, Arizona, 1392",
+      "about": "Dolore laborum dolore do exercitation aliquip. Quis non culpa magna cupidatat ullamco dolore sit minim aliqua adipisicing aliquip nulla. Ullamco voluptate in sit aute voluptate velit irure quis ea anim reprehenderit.\r\n",
+      "balance": "$2,540.53",
+      "city": "Bogor",
+      "rating": 7
+    },
+    {
+      "id": "65bfac3af70e7c3eeb9f975a",
+      "name": "Signidyne",
+      "email": "roylyons@signidyne.com",
+      "phone": "+62 (922) 477-2595",
+      "address": "823 Taylor Street, Welch, California, 4542",
+      "about": "Dolore cupidatat Lorem adipisicing irure fugiat exercitation. Mollit esse qui voluptate consequat sunt officia magna ex do. Occaecat voluptate ipsum Lorem labore exercitation ad laborum consequat cupidatat irure commodo incididunt aliquip. Aliqua incididunt laboris exercitation exercitation ullamco non laborum consequat labore anim est commodo ipsum. Exercitation aute esse occaecat pariatur dolor fugiat laboris laboris pariatur in pariatur. Minim deserunt eu adipisicing labore minim labore dolore magna anim culpa officia do ea minim. Adipisicing fugiat Lorem nostrud officia occaecat anim ea aliquip eiusmod amet cillum ipsum.\r\n",
+      "balance": "$2,270.61",
+      "city": "Bekasi",
+      "rating": 10
+    },
+    {
+      "id": "65bfac3af9621df4b73903af",
+      "name": "Manufact",
+      "email": "roylyons@manufact.com",
+      "phone": "+62 (930) 595-2712",
+      "address": "912 Division Avenue, Stagecoach, North Dakota, 8810",
+      "about": "Cillum laboris elit nulla incididunt voluptate ipsum eiusmod adipisicing. Tempor ex nisi quis reprehenderit veniam. Est aute eiusmod est cupidatat dolor labore reprehenderit ex irure.\r\n",
+      "balance": "$2,423.12",
+      "city": "Bogor",
+      "rating": 10
+    },
+    {
+      "id": "65bfac3ad507bebd570c1761",
+      "name": "Cemention",
+      "email": "roylyons@cemention.com",
+      "phone": "+62 (943) 589-3600",
+      "address": "392 Kensington Street, Kylertown, Alabama, 8368",
+      "about": "Amet mollit culpa sint eiusmod veniam quis cillum eiusmod laboris ea proident minim. Aliquip nostrud excepteur nulla labore proident. Nisi nulla laborum elit proident. Nostrud ea ea non irure in commodo eiusmod sit minim exercitation cupidatat consectetur qui nulla. Elit et pariatur tempor laborum commodo esse Lorem. Officia magna labore occaecat cupidatat. Velit incididunt eu aliquip reprehenderit reprehenderit et ipsum dolor officia incididunt.\r\n",
+      "balance": "$2,855.47",
+      "city": "Tangerang Selatan",
+      "rating": 10
+    },
+    {
+      "id": "65bfac3ac10a57d810e31742",
+      "name": "Recognia",
+      "email": "roylyons@recognia.com",
+      "phone": "+62 (889) 493-2465",
+      "address": "131 Pilling Street, Idamay, Mississippi, 186",
+      "about": "Labore ullamco fugiat cillum velit. Eu mollit dolor irure ut qui occaecat mollit anim. Magna quis et excepteur esse. Commodo amet sunt voluptate irure reprehenderit Lorem fugiat ut.\r\n",
+      "balance": "$3,883.28",
+      "city": "Bogor",
+      "rating": 3
+    },
+    {
+      "id": "65bfac3aeb6535f881f78d35",
+      "name": "Terascape",
+      "email": "roylyons@terascape.com",
+      "phone": "+62 (972) 437-2751",
+      "address": "580 Cranberry Street, Allensworth, Texas, 8944",
+      "about": "Nisi fugiat non Lorem laboris dolor officia ea nulla laboris. Exercitation mollit sunt deserunt nisi consequat velit ad deserunt cillum et. Excepteur do adipisicing officia tempor commodo adipisicing ut ullamco sint nulla nulla cupidatat.\r\n",
+      "balance": "$1,576.74",
+      "city": "Jakarta",
+      "rating": 9
+    },
+    {
+      "id": "65bfac3aa6f95b2e0c58212d",
+      "name": "Microluxe",
+      "email": "roylyons@microluxe.com",
+      "phone": "+62 (999) 553-2150",
+      "address": "401 Conover Street, Alderpoint, Washington, 7561",
+      "about": "Velit laboris cupidatat ad reprehenderit aute ad laboris. Officia labore enim non pariatur nostrud ex minim nulla nostrud excepteur consectetur. Eiusmod dolore culpa sint mollit nisi velit magna eu ipsum duis tempor aute magna Lorem. Qui ullamco nisi dolor adipisicing adipisicing.\r\n",
+      "balance": "$1,427.03",
+      "city": "Tangerang Selatan",
+      "rating": 6
+    },
+    {
+      "id": "65bfac3a96beb12c09daa11f",
+      "name": "Talendula",
+      "email": "roylyons@talendula.com",
+      "phone": "+62 (991) 431-3188",
+      "address": "603 Harrison Place, Blanco, Virgin Islands, 4234",
+      "about": "Sint dolor ad sit sunt amet dolor labore nulla non ad nostrud amet. Nulla sunt culpa exercitation laboris cupidatat laborum est officia ullamco dolore cupidatat dolor anim. Officia et cupidatat eiusmod adipisicing nisi pariatur irure eu qui aute pariatur fugiat veniam qui. Veniam dolore voluptate officia occaecat eiusmod laboris non adipisicing. Culpa voluptate reprehenderit tempor officia aliquip elit ea exercitation ipsum. Ut minim sint occaecat esse magna sunt minim amet.\r\n",
+      "balance": "$2,768.74",
+      "city": "Tangerang",
+      "rating": 5
+    },
+    {
+      "id": "65bfac3aec5eae659c6d51b0",
+      "name": "Rockyard",
+      "email": "roylyons@rockyard.com",
+      "phone": "+62 (960) 544-3035",
+      "address": "310 Pioneer Street, Orason, Pennsylvania, 2042",
+      "about": "Adipisicing id occaecat anim magna aliqua Lorem sit elit commodo in dolor velit ullamco ipsum. Duis excepteur dolor cillum proident Lorem veniam incididunt. Laborum id aliquip enim incididunt aliqua nostrud et dolor. Est et laboris ut sint aliqua labore enim incididunt culpa labore est. Qui commodo eiusmod exercitation incididunt eu dolor occaecat enim sunt enim non amet veniam.\r\n",
+      "balance": "$3,378.45",
+      "city": "Tangerang",
+      "rating": 3
+    },
+    {
+      "id": "65bfac3a0e813b1cd276417e",
+      "name": "Turnling",
+      "email": "roylyons@turnling.com",
+      "phone": "+62 (889) 542-3172",
+      "address": "406 Fair Street, Greenbush, Montana, 6301",
+      "about": "Eiusmod irure ad et Lorem Lorem consequat et aliqua aliquip sunt sit. Consectetur ad ex nulla dolore irure pariatur commodo cillum culpa adipisicing culpa fugiat consequat. Ut ut consequat amet do. Minim reprehenderit excepteur ad mollit Lorem mollit nostrud laboris aliquip incididunt ipsum qui nostrud cupidatat. Nulla do sit ex deserunt ad. Labore exercitation occaecat anim magna et enim magna officia nulla nulla amet qui dolor eiusmod.\r\n",
+      "balance": "$1,945.32",
+      "city": "Jakarta",
+      "rating": 6
+    },
+    {
+      "id": "65bfac3a61e5e8ad52e22eb9",
+      "name": "Proflex",
+      "email": "roylyons@proflex.com",
+      "phone": "+62 (933) 593-3961",
+      "address": "692 Lester Court, Westerville, Oregon, 6872",
+      "about": "Sunt labore officia deserunt officia. Proident pariatur tempor amet est mollit Lorem commodo sint excepteur laboris non laborum. Tempor veniam aliqua consectetur aute.\r\n",
+      "balance": "$3,304.48",
+      "city": "Tangerang",
+      "rating": 6
+    }
+  ]
+}
