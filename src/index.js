@@ -5,6 +5,10 @@ import "./index.css"
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import HotelsPage from './components/pages/HotelsPage';
 import Home from './components/pages/HomePage';
+import LoginPage from './components/pages/LoginRegisterPage';
+import DetailsPage from './components/pages/DetailsPage';
+import NavbarComponent from './components/NavbarComponent';
+import FooterComponent from './components/FooterComponent';
 
 const router = createBrowserRouter([
   {
@@ -14,13 +18,23 @@ const router = createBrowserRouter([
   {
     path: "/hotels",
     element: <HotelsPage />
+  },
+  {
+    path: "/login",
+    element: <LoginPage />
+  },
+  {
+    path: "/details/:id",
+    element: <DetailsPage />
   }
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+    <NavbarComponent />
+    <RouterProvider router={router} />
+    <FooterComponent />
   </React.StrictMode>
 );
 

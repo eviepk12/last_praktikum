@@ -2,10 +2,10 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions } from '@mui/material';
+import { Button, CardActionArea, CardActions, Divider } from '@mui/material';
 import image from "../assets/header-image.jpeg"
 
-export default function CardComponent({ name, about, address, hotelId }) {
+export default function CardComponent({ name, about, address }) {
 
     function formatAbout(about) {
         return (
@@ -13,10 +13,15 @@ export default function CardComponent({ name, about, address, hotelId }) {
         )
     }
 
+    // function handleDelete() {
+    //     dispatch({ type: ACTIONS.DELETE_HOTEL })
+    //     axios.delete(`http://localhost:8000/hotels/${id}`)
+    // }
+
     return (
         <>
-            <Card sx={{ maxWidth: 345 }}>
-                <CardActionArea>
+            <Card sx={{ flexgrow: 1 }}>
+                <CardActionArea href= {`/details/`}>
                     <CardMedia
                         component="img"
                         height="140"
@@ -36,6 +41,8 @@ export default function CardComponent({ name, about, address, hotelId }) {
                         </Typography>
                     </CardContent>
                 </CardActionArea>
+                <Divider variant="middle"/>
+
                 <CardActions>
                     <Button size="small" variant="contained" color="success">
                         Update

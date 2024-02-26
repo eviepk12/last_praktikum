@@ -21,14 +21,14 @@ function Copyright() {
   
   const defaultTheme = createTheme();
   
-  export default function Footer() {
+  export default function FooterComponent() {
     return (
       <ThemeProvider theme={defaultTheme}>
         <Box
           sx={{
             display: 'flex',
             flexDirection: 'column',
-            minHeight: '50vh',
+            minHeight: '20vh',
           }}
         >
           <Box
@@ -43,7 +43,11 @@ function Copyright() {
                   : theme.palette.grey[800],
             }}
           >
-            <Container maxWidth="sm">
+            <Container>
+            <Typography variant="h4">
+              Nginep Aja
+            </Typography>
+
               <Typography variant="body1">
               </Typography>
               <Copyright />
