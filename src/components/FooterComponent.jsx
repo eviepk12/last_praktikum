@@ -23,7 +23,7 @@ function Copyright() {
   
   export default function FooterComponent() {
     return (
-      <ThemeProvider theme={defaultTheme}>
+      // <ThemeProvider theme={defaultTheme}>
         <Box
           sx={{
             display: 'flex',
@@ -54,7 +54,7 @@ function Copyright() {
             </Container>
           </Box>
         </Box>
-      </ThemeProvider>
+      // </ThemeProvider>
     );
   }
   

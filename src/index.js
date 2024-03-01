@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import "./index.css"
 
@@ -9,11 +9,15 @@ import LoginPage from './components/pages/LoginRegisterPage';
 import DetailsPage from './components/pages/DetailsPage';
 import NavbarComponent from './components/NavbarComponent';
 import FooterComponent from './components/FooterComponent';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+import App from './App';
+
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />
+    element: <App/>
   },
   {
     path: "/hotels",
@@ -29,12 +33,23 @@ const router = createBrowserRouter([
   }
 ])
 
+const darkTheme = createTheme({
+  palette: {
+    mode: 'dark'
+  }
+})
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <NavbarComponent />
-    <RouterProvider router={router} />
-    <FooterComponent />
+    <ThemeProvider theme={darkTheme}>
+      <CssBaseline />
+      <NavbarComponent />
+      
+      <RouterProvider router={router} />
+
+      <FooterComponent />
+    </ThemeProvider>
   </React.StrictMode>
 );
 

@@ -10,6 +10,7 @@ export default function Home() {
     return (
         <>
             <Header />
+            
             <br />
             <br />
 
@@ -18,6 +19,8 @@ export default function Home() {
                     Our Mission
                 </Typography>
             </Divider>
+
+            <br />
 
             <Container >
                 <CarouselComponent />
