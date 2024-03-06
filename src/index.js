@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import "./index.css"
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
 import HotelsPage from './components/pages/HotelsPage';
 import Home from './components/pages/HomePage';
 import LoginPage from './components/pages/LoginRegisterPage';
@@ -12,44 +13,61 @@ import FooterComponent from './components/FooterComponent';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import App from './App';
+import AddFormPage from "./components/pages/HotelAddFormPage.jsx";
+import UpdateFormPage from "./components/pages/HotelUpdateFormPage.jsx"
 
+// const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <App/>
+//   },
+//   {
+//     path: "/hotels",
+//     element: <HotelsPage />
+//   },
+//   {
+//     path: "/login",
+//     element: <LoginPage />
+//   },
+//   {
+//     path: "/details/:id",
+//     element: <DetailsPage />
+//   },
+//   {
+//     path: "/addHotel",
+//     element: <AddFormPage />
+//   },
+//   {
+//     path: "/updateHotel/:id",
+//     element: <UpdateFormPage />
+//   }
+// ])
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App/>
-  },
-  {
-    path: "/hotels",
-    element: <HotelsPage />
-  },
-  {
-    path: "/login",
-    element: <LoginPage />
-  },
-  {
-    path: "/details/:id",
-    element: <DetailsPage />
-  }
-])
+// const darkTheme = createTheme({
+//   palette: {
+//     mode: 'dark'
+//   }
+// })
 
-const darkTheme = createTheme({
-  palette: {
-    mode: 'dark'
-  }
-})
+// const lightTheme = createTheme({
+//   palette: {
+//     mode: 'light'
+//   }
+// })
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+
   <React.StrictMode>
-    <ThemeProvider theme={darkTheme}>
+    {/* <ThemeProvider theme={theme}>
       <CssBaseline />
-      <NavbarComponent />
+      <NavbarComponent changeTheme={handleTheme}/>
       
       <RouterProvider router={router} />
 
       <FooterComponent />
-    </ThemeProvider>
+    </ThemeProvider> */}
+    <App />
   </React.StrictMode>
 );
 

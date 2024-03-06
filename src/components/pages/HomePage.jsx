@@ -6,7 +6,7 @@ import header_image from "../../assets/header-image.jpeg"
 import Carousel from "react-material-ui-carousel";
 import CarouselComponent from "../CarouselComponent";
 
-export default function Home() {
+export default function HomePage() {
     return (
         <>
             <Header />

@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../NavbarComponent";
 
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -26,7 +25,7 @@ export default function DetailsPage() {
                     <Grid container spacing={1} marginTop={"100px"}>
                         <Grid item xs={6}>
                             {/* <h2>Nginep Aja!</h2> */}
-                            <img src={image} alt="Hotel" style={{ width: "500px", borderRadius: "20px", marginBottom: "50px" }} />
+                            <img src={image} alt="Hotel" style={{ width: "500px", borderRadius: "20px", marginBottom: "50px", display: "grid", placeItems: "center" }} />
                         </Grid>
                         <Grid item xs={6}>
 
@@ -56,10 +55,11 @@ export default function DetailsPage() {
                                 <span style={{ color: "red" }}>Price :</span>  <span style={{ color: "green" }}>{item.balance}</span>
                             </Typography>
 
+
                             <br />
                             <Rating name="read-only" value={item.rating} readOnly />
                             <br />
-                            
+
                         </Grid>
                     </Grid>
                 }

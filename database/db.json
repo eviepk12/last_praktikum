@@ -177,9 +177,19 @@
       "rating": 5
     }
   ],
-  "login": [
+  "users": [
     {
-      "token" : "token1234"
+      "id": "12das",
+      "username": "admin",
+      "password": "admin",
+      "isAdmin" : true
+    },
+    {
+      "id": "92f2",
+      "username": "user",
+      "password": "user",
+      "isAdmin" : false
+
     }
   ]
 }
