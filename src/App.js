@@ -1,6 +1,4 @@
-import Home from "./components/pages/HomePage";
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React, { useState } from 'react';
 import "./index.css"
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -16,14 +14,20 @@ import CssBaseline from '@mui/material/CssBaseline';
 import AddFormPage from "./components/pages/HotelAddFormPage.jsx";
 import UpdateFormPage from "./components/pages/HotelUpdateFormPage.jsx"
 
+function useCheckUser() {
+    const savedUser = localStorage.getItem("user")
+    const initialValue = JSON.parse(savedUser)
+    return initialValue || ""
+}
+
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <HomePage/>
+    element: <HomePage />
   },
   {
     path: "/hotels",
-    element: <HotelsPage />
+    element: <HotelsPage/>
   },
   {
     path: "/login",
@@ -58,14 +62,14 @@ const lightTheme = createTheme({
 function App() {
   return (
     <>
-    <ThemeProvider theme={lightTheme}>
-      <CssBaseline />
-      <NavbarComponent />
-      
-      <RouterProvider router={router} />
+      <ThemeProvider theme={lightTheme}>
+        <CssBaseline />
+        <NavbarComponent userData={useCheckUser()}/>
 
-      <FooterComponent />
-    </ThemeProvider>
+        <RouterProvider router={router} />
+
+        <FooterComponent />
+      </ThemeProvider>
     </>
   );
 }

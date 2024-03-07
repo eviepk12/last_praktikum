@@ -45,9 +45,9 @@ export default function LoginRegisterPage() {
             })
 
             if (isLoggedIn === true) {
-                localStorage.setItem(validateUser, JSON.stringify(validateUser))
+                localStorage.setItem("user", JSON.stringify(validateUser))
                 console.log("User sucessfully stored to local storage")
-                navigate("/")
+                navigate("/hotels")
             }
 
             console.log(validateUser)

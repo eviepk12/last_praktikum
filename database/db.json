@@ -182,14 +182,13 @@
       "id": "12das",
       "username": "admin",
       "password": "admin",
-      "isAdmin" : true
+      "isAdmin": true
     },
     {
       "id": "92f2",
       "username": "user",
       "password": "user",
-      "isAdmin" : false
-
+      "isAdmin": false
     }
   ]
 }

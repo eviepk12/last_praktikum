@@ -18,7 +18,7 @@ export const ACTIONS = {
     DELETE_HOTEL: "delete-hotel",
     ADD_HOTEL: "add-hotel",
     FILTER_HOTELS: "filter-hotels",
-    SEARCH_HOTELS: "search-hotels"
+    SEARCH_HOTELS: "search-hotels",
 }
 
 const hotelsDetailsReducer = (state, action) => {
@@ -33,7 +33,7 @@ const hotelsDetailsReducer = (state, action) => {
             return {
                 ...state,
                 loading: false,
-                hotelsDetails: action.data
+                hotelsDetails: action.payload
             };
         }
         case ACTIONS.ERROR: {
@@ -78,21 +78,29 @@ const initialState = {
 
 export default function HotelsPage() {
     const [state, dispatch] = useReducer(hotelsDetailsReducer, initialState)
-    const { hotelsDetails, loading, error, filteredHotels } = state
+    const { hotelsDetails, filteredHotels, loading, error } = state
     const [isNotFiltering, setIsNotFiltering] = useState(true)
+    const [userData, setUserData] = useState(() => {
+        const savedUser = localStorage.getItem("user")
+        const initialValue = JSON.parse(savedUser)
+        return initialValue || ""
+    }
+    )
 
     useEffect(() => {
         dispatch({ type: ACTIONS.CALL_API })
         const getHotels = async () => {
             let response = await axios.get(`http://localhost:8000/hotels`);
             if (response.status === 200) {
-                dispatch({ type: ACTIONS.SUCCESS, data: response.data })
+                dispatch({ type: ACTIONS.SUCCESS, payload: response.data })
                 return;
             }
             dispatch({ type: ACTIONS.ERROR, error: response.error })
         }
         getHotels();
+
     }, [])
+
 
     function formatAbout(about) {
         return (
@@ -154,14 +162,19 @@ export default function HotelsPage() {
                         </Select>
                     </div>
                     <div>
-                        <TextField label="Search" variant="outlined" style={{ width: "45vw" }} margin="dense" 
-                        onChange={(e) => handleSearch(e.target.value)} />
+                        <TextField label="Search" variant="outlined" style={{ width: "45vw" }} margin="dense"
+                            onChange={(e) => handleSearch(e.target.value)} />
                     </div>
-                    <div>
-                        <Button variant="contained" color="success" href="/addHotel">
-                            Add Hotel
-                        </Button>
-                    </div>
+                    {userData.isAdmin === true ? (
+                        <div>
+                            <Button variant="contained" color="success" href="/addHotel">
+                                Add Hotel
+                            </Button>
+                        </div>
+                    ): (
+                        <></>
+                    )}
+
                 </div>
                 <br />
 
@@ -176,7 +189,7 @@ export default function HotelsPage() {
                         ) : isNotFiltering ? (
                             hotelsDetails.map((hotel) => {
                                 return (
-                                    <Grid item key={hotel.id} style={{width: "500px"}}>
+                                    <Grid item key={hotel.id} style={{ width: "500px" }}>
                                         <Card sx={{ flexgrow: 1 }}>
                                             <CardActionArea href={`/details/${hotel.id}`}>
                                                 <CardMedia
@@ -206,15 +219,22 @@ export default function HotelsPage() {
                                             </CardActionArea>
 
                                             <Divider variant="middle" />
+                                            {console.log(userData.isAdmin)}
 
-                                            <CardActions>
-                                                <Button size="small" href={`/updateHotel/${hotel.id}`} variant="contained" color="success">
-                                                    Update
-                                                </Button>
-                                                <Button size="small" variant="contained" color="error" onClick={() => { handleDelete(hotel.id) }}>
-                                                    Delete
-                                                </Button>
-                                            </CardActions>
+                                            {userData.isAdmin === true ? (
+                                                <CardActions>
+                                                    <Button size="small" href={`/updateHotel/${hotel.id}`} variant="contained" color="success">
+                                                        Update
+                                                    </Button>
+                                                    <Button size="small" variant="contained" color="error" onClick={() => { handleDelete(hotel.id) }}>
+                                                        Delete
+                                                    </Button>
+                                                </CardActions>
+                                            ) : (
+                                                <>
+                                                </>
+                                            )}
+
                                         </Card>
                                     </Grid>
                                 )
@@ -222,7 +242,7 @@ export default function HotelsPage() {
                         ) : (
                             filteredHotels.map((filteredHotel) => {
                                 return (
-                                    <Grid item key={filteredHotel.id} style={{width: "500px"}}>
+                                    <Grid item key={filteredHotel.id} style={{ width: "500px" }}>
                                         <Card sx={{ flexgrow: 1 }}>
                                             <CardActionArea href={`/details/${filteredHotel.id}`}>
                                                 <CardMedia
@@ -253,14 +273,19 @@ export default function HotelsPage() {
 
                                             <Divider variant="middle" />
 
-                                            <CardActions>
-                                                <Button size="small" href={`/updateHotel/${filteredHotel.id}`} variant="contained" color="success">
-                                                    Update
-                                                </Button>
-                                                <Button size="small" variant="contained" color="error" onClick={() => { handleDelete(filteredHotel.id) }}>
-                                                    Delete
-                                                </Button>
-                                            </CardActions>
+                                            {userData.isAdmin === true ? (
+                                                <CardActions>
+                                                    <Button size="small" href={`/updateHotel/${filteredHotel.id}`} variant="contained" color="success">
+                                                        Update
+                                                    </Button>
+                                                    <Button size="small" variant="contained" color="error" onClick={() => { handleDelete(filteredHotel.id) }}>
+                                                        Delete
+                                                    </Button>
+                                                </CardActions>
+                                            ) : (
+                                                <>
+                                                </>
+                                            )}
                                         </Card>
                                     </Grid>
                                 )
@@ -284,5 +309,4 @@ export default function HotelsPage() {
             </Container >
         </>
     )
-
 }
